@@ -20,7 +20,7 @@ CREATE FUNCTION [dbo].[AntennaBoresightFactor]
 	@Y2 int,        -- Position 2 Y
 	@A1 int,        -- Position 1 Azimuth
 	@A2 int = NULL, -- Position 2 Azimuth (optional, default = arctangent to Position 1)
-	@E bit  = 1     -- Enable distance entropy (option, default = enabled)
+	@E bit  = 1     -- Enable distance entropy (optional, default = enabled)
 )
 RETURNS float
 AS
